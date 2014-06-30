@@ -28,7 +28,8 @@ function ga_settings_page() {
 <h2>Google Analytics Page List</h2>
 <p>
 To create a new Client ID, visit <a href ="https://console.developers.google.com/">Google Developer's Console</a> and register the page under the EHP Analytics credentials:</p>
-<table><tr><td>User:</td><td>EHP.auto@gmail.com</td></tr><tr><td>Pass:</td><td>autodeskengineering</td></tr></table>
+<table><tr><td><strong>User:</strong></td><td>EHP.auto@gmail.com</td></tr><tr><td><strong>Pass:</strong></td><td>autodeskengineering</td></tr></table>
+<p><strong>To register a new Client ID,</strong><br />(1) Create a new project <br />(2) Visit 'APIs' under 'APIs & Auth' <br />(3) Turn on the Analytics API <br />(4) Visit 'Credentials' under 'APIs & Auth' <br />(5) 'Create new Client ID' </p>
 <form method="post" action="options.php">
     <?php settings_fields( 'ga_settings_group' ); ?>
     <?php do_settings_sections( 'ga_settings_group' ); ?>
