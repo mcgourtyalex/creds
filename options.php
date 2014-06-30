@@ -27,6 +27,7 @@ function ga_settings_page() {
 <div class="wrap">
 <h2>Google Analytics Page List</h2>
     <?php
+        $client_id = get_option('client_id');
         if (!$client_id) {
             echo "To set up this application, please create a Client ID with your Google Analytics account.";
         } 
